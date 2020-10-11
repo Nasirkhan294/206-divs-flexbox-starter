@@ -141,7 +141,7 @@ header h1 {
 
 main p {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.35em;
     text-align: left;
     padding-left: 0.6em;
     border-top: 2px solid #8a2aa8;
@@ -151,19 +151,15 @@ main p {
 footer {
     border-top: 2px solid #8a2aa8;
 }
-footer ul li {
-    list-style: none;
-    display: inline-block;
-}
-footer ul li a {
-    margin-left: 50px;
-}
+footer i {
+    padding: 30px 20px 0 0;
+  }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-flow: row wrap;
+    width: 1200px;
 }
 
 .flex-container span {
@@ -172,17 +168,20 @@ footer ul li a {
     color: #a16d0c;
 }
 
-.flex-items {
+.flex-items-1, .flex-items-2, .flex-items-3{
     color: #222;
-    line-height: 1.3em;
+    line-height: 1.2em;
     font-size: 1.2em;
     width: 32%;
     height: 350px;
     display: flex;
     justify-content: center;
     padding-left: 0.3em; 
-    border-left:2px solid #222;  
-    border-right:2px solid #222; 
+}
+.flex-items-2 {
+    border-left: 1px solid #0000ff;
+    border-right: 1px solid #0000ff;
+    padding-left: 20px;
 }
 
 /* ==========================================================================
