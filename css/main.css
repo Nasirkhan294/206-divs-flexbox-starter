@@ -97,52 +97,93 @@ textarea {
 
 
 html {
-  background-color: #222;
+  background-image: url('../img/symphony.png');
   height: 100%;
   width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  color: #fff;
-  padding: 2em;
+  font-size: 1.25em;
+  color: #222;
+  padding: 0 2em;
   height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  align-items: center;
+header,
+footer {
+    height: 80px;
+    width: 100%;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  justify-content: center;
-  align-items: center;
-  color: #ffc;
-  line-height: 1.5em;
-  font-size: 1.25em;
-  /* width: 30%; */
-  height: auto;
-  padding-left: 1.3em;
-  border: 1px solid #999;
-  border-radius: 1em;
-}
-.div-1 {
-    padding-right: 1em;
-}
-.div-2 {
-    padding-right: 1em;
+main {
+    height: 250px;
+    width: 100%;
+    border-bottom: 2px solid #8a2aa8;
+
 }
 
-.wrapper span {
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+}
+
+header h1 {
     font-family: 'Lora', sans-serif;
-    font-size: 1.3em;
-    color: #cd8
+    font-weight: 700;
+    font-size: 2em;
+    color: #8a2aa8;
+    text-align: initial;
 }
 
+main p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 0.6em;
+    border-top: 2px solid #8a2aa8;
+    padding-top: 1em;
+}
 
+footer {
+    border-top: 2px solid #8a2aa8;
+}
+footer ul li {
+    list-style: none;
+    display: inline-block;
+}
+footer ul li a {
+    margin-left: 50px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.flex-container span {
+    font-family: 'Lora', sans-serif;
+    font-size: 1em;
+    color: #a16d0c;
+}
+
+.flex-items {
+    color: #222;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    width: 32%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0.3em; 
+    border-left:2px solid #222;  
+    border-right:2px solid #222; 
+}
 
 /* ==========================================================================
    Helper classes
